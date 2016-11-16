@@ -1,2 +1,2 @@
-# convert-git-emoji
-转换GitHub原生表情
+# ConvertGitEmoji
+转换原生的GitHub表情

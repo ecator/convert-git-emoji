@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>ConvertGitEmoji Demo</title>
+	<script type="text/javascript">
+		function creatXMLHttp(){
+			var xmlhttp=null
+			if (window.XMLHttpRequest){
+			// code for all new browsers
+			xmlhttp=new XMLHttpRequest()
+			}else if (window.ActiveXObject){
+ 			// code for IE5 and IE6
+ 			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP")
+ 			}
+ 		return xmlhttp
+ 	}
+ </script>
+ <style type="text/css">
+ 	.emojis{
+ 		width: 80%;
+ 	}
+ 	.emojis ul{
+ 		width: 100%;
+ 		column-count: :3; 
+ 		/*border:1px red solid;*/
+ 	}
+ 	.emojis ul li{
+ 		list-style: none;
+ 		/*border:1px blue solid;*/
+ 		display: inline-block;
+ 		width: 30%;
+ 	}
+ 	.emojis .gemoji{
+ 		/*width: 100px;*/
+ 	}
+ </style>
+</head>
+<body>
+	<div class="emojis" id="emojis-list"></div>
+	<script type="text/javascript">
+		var xmlhttp=creatXMLHttp()
+		xmlhttp.open("GET","list.html",false)
+		xmlhttp.send(null)
+		var emojisList=document.getElementById("emojis-list")
+		emojisList.innerHTML=xmlhttp.responseText
+	</script>
+	<script type="text/javascript" src="../convertgemojis.js" data-type="convertgemojis" data-emojis-src="../emojis/" data-emojis-size="32px"></script>
+</body>
+</html>
