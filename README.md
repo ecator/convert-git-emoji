@@ -11,7 +11,7 @@ http://gemoji.nocode.site/
 
 > 建议在文档尾部引入js文件，因为这个的原理其实就是把<span>:</span>smile:等表情代码替换成img标签，所以需要等所有文档加载完毕才能保证不出错。
 
-- data-emojis-src为可选属性，用于指定表情的仓库地址，默认为 http://gemoji.nocode.site/emojis/emojis/ 这个目录下储存的表情png文件（本地地址已经通过百度CDN加速），所以替换表情代码的时候会从这里下载表情。当然你也可以自己指定本地的一个地址，支持相对和绝对地址，注意地址的结尾必须以"/"结尾，否则出错。
+- data-emojis-src为可选属性，用于指定表情的仓库地址，默认为 http://gemoji.nocode.site/emojis/ 这个目录下储存的表情png文件（本地地址已经通过百度CDN加速），所以替换表情代码的时候会从这里下载表情。当然你也可以自己指定本地的一个地址，支持相对和绝对地址，注意地址的结尾必须以"/"结尾，否则出错。
 
 - data-emojis-size为可选属性，用于设置表情的大小，单位是px，比如设置data-emojis-size="32px"，表示所有表情的大小为32px。
 
