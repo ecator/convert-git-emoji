@@ -6,7 +6,7 @@ http://gemoji.nocode.site/
 非常简单，只需要把convertgemojis.js文件引入到文档的底部，然后加入data-type="convertgemojis"属性就可以了。
 
 ```
-<script type="text/javascript" src="convertgemojis.js" data-type="convertgemojis" data-emojis-src="" data-emojis-size=""></script>
+<script type="text/javascript" src="http://gemoji.nocode.site/convertgemojis.js" data-type="convertgemojis" data-emojis-src="" data-emojis-size=""></script>
 ```
 
 > 建议在文档尾部引入js文件，因为这个的原理其实就是把<span>:</span>smile:等表情代码替换成img标签，所以需要等所有文档加载完毕才能保证不出错。
