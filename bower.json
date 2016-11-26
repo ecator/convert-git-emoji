@@ -1,0 +1,21 @@
+{
+  "name": "convertgemojis",
+  "homepage": "https://github.com/ecator/convert-git-emoji",
+  "authors": [
+    "Ecat <qule520@126.com>"
+  ],
+  "description": "make html support gitemoji code",
+  "main": "convertgemojis.js",
+  "keywords": [
+    "git",
+    "emoji"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
