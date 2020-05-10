@@ -22,32 +22,32 @@
  <style type="text/css">
  	*{
  		margin: 0;
+		padding: 0;
  	}
  	.emojis{
- 		width: 80%;
+ 		width: 100%;
  	}
  	.emojis ul{
  		width: 100%;
- 		column-count: 3; 
- 		/*border:1px red solid;*/
+		 display: flex;
+		 flex-wrap: wrap;
  	}
  	.emojis ul li{
  		list-style: none;
  		/*border:1px blue solid;*/
  		display: inline-block;
- 		width: 30%;
+ 		flex: 1 1 30%;
  	}
- 	@media (max-width: 500px){
- 		.emojis{
- 			width: 100%;
- 		}
- 		.emojis ul{
- 			column-count: 1;
- 		}
- 		.emojis ul li{
- 			width: 80%;
- 		}
- 	}
+	@media (max-width: 750px) {
+		.emojis ul li{
+			flex: 1 1 50%;
+		}
+	}
+	@media (max-width: 500px) {
+		.emojis ul li{
+			flex: 1 1 100%;
+		}
+	}
  </style>
 </head>
 <body>
