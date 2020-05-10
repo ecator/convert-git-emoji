@@ -11,7 +11,7 @@ window.addEventListener('load',function(){
 		convergemojis={}
 	}
 	// console.log(convergemojis,convergemojis.dataset.emojisSrc,convergemojis.dataset.emojisSize)
-	var emojisSrc=convergemojis.dataset.emojisSrc || "http://gemoji.nocode.site/emojis/"
+	var emojisSrc=convergemojis.dataset.emojisSrc || "https://gemoji.nocode.site/emojis/"
 	var emojisSize=convergemojis.dataset.emojisSize || "16px"
 	console.log(emojisSrc,emojisSize)
 	var emojisTmp=["\+1",
